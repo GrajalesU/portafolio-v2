@@ -2,7 +2,7 @@ import center from "../../assets/technologies/center.png";
 import node from "../../assets/technologies/Node Js.png";
 import html from "../../assets/technologies/Html.png";
 import css from "../../assets/technologies/CSS3.png";
-import sass from "../../assets/technologies/sass.png";
+import sass from "../../assets/technologies/Sass.png";
 import react from "../../assets/technologies/React.png";
 import ts from "../../assets/technologies/TypeScript.png";
 import git from "../../assets/technologies/Git.png";

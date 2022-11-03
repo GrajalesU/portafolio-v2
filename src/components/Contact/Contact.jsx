@@ -11,10 +11,10 @@ export default function Contact() {
         className="absolute top-[calc(50%-228px)] -z-10"
       />
       <div>
-        <h2 className="w-full text-center text-2xl font-normal pt-16 mb-11">
+        <h2 className="w-full text-center text-xl font-normal pt-16 mb-11">
           CONTÁCTAME
         </h2>
-        <p className="w-10/12 mb-16 mx-auto font-medium text-xl tracking-wide">
+        <p className="w-10/12 mb-16 mx-auto font-medium text-lg tracking-wide">
           Envíame un email a{" "}
           <a
             href="mailto: juan.grajalesu@gmail.com"

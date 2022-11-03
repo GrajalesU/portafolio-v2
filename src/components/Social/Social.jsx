@@ -5,7 +5,7 @@ import resume from "../../assets/icons/Resume.png";
 
 export default function Social() {
   return (
-    <div className="flex w-full justify-between absolute bottom-9">
+    <div className="flex w-full justify-between absolute bottom-5">
       <div>
         {
           //TODO: Linea larga

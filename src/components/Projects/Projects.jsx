@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import wave from "../../assets/background/wave-projects.png";
 export default function Projects() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen relative">
       <img src={wave} className="absolute w-full -z-10" />
 
       <div>

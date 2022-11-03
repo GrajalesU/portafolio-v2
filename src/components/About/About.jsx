@@ -5,7 +5,7 @@ import wave from "../../assets/background/wave-about.png";
 
 export default function About() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen relative">
       <div>
         <h2 className=" pt-5 ml-4 mb-8 text-xl">SOBRE MI</h2>
         <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg">

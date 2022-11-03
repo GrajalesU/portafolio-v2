@@ -5,10 +5,10 @@ export default function Technologies() {
   return (
     <div className="w-full min-h-screen relative">
       <div>
-        <h2 className="w-full text-right pt-4 pr-6 text-2xl mb-10">
+        <h2 className="w-full text-right pt-4 pr-6 text-xl mb-10">
           TECNOLOGÍAS
         </h2>
-        <p className="w-4/5 mx-auto tracking-wide text-xl font-medium mb-14">
+        <p className="w-4/5 mx-auto tracking-wide text-lg font-medium mb-14">
           Estas son algunas de las tecnologías y herramientas con las que he
           trabajado.
         </p>

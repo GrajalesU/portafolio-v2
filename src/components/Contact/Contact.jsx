@@ -3,7 +3,7 @@ import hired from "../../assets/background/hired.png";
 import wave from "../../assets/background/wave-contact.png";
 export default function Contact() {
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full min-h-screen relative">
       <img src={wave} className="absolute w-full -z-10" />
       <img
         src={hired}

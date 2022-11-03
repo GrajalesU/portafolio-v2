@@ -5,10 +5,10 @@ import wave from "../../assets/background/wave-about.png";
 
 export default function About() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full min-h-screen">
       <div>
-        <h2 className=" pt-5 ml-4 mb-20 text-2xl">SOBRE MI</h2>
-        <div className="tracking-wide font-medium w-11/12 mx-auto mb-20 text-xl">
+        <h2 className=" pt-5 ml-4 mb-8 text-xl">SOBRE MI</h2>
+        <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg">
           <span>¡Hola!</span>
           <p>
             Soy <b>Juan Manuel Grajales</b> y vivo en Colombia.

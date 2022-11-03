@@ -2,7 +2,7 @@ import React from "react";
 import quePrefieres from "./../../assets/projects/que_prefieres.jpg";
 export default function Card() {
   return (
-    <article className="w-72 h-[580px] shadow-xl bg-white mx-auto">
+    <article className="w-72 h-[580px] shadow-xl bg-white mx-auto mb-3">
       <div className="w-full h-64 bg-amber-100 flex mb-9">
         <img
           src={quePrefieres}

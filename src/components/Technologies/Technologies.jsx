@@ -3,7 +3,7 @@ import TechList from "../TechList/TechList";
 import wave from "../../assets/background/wave-tech.png";
 export default function Technologies() {
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full min-h-screen relative">
       <div>
         <h2 className="w-full text-right pt-4 pr-6 text-2xl mb-10">
           TECNOLOGÍAS

@@ -11,9 +11,11 @@ import aws from "../../assets/technologies/AWS.png";
 import { motion } from "framer-motion";
 
 import React, { useState } from "react";
+import useWindowSize from "../../hooks/useWindowSize";
 
 export default function TechList() {
   const [selected, setSelected] = useState(undefined);
+  const windowWidth = useWindowSize();
 
   const container = {
     hidden: { opacity: 0 },
@@ -51,6 +53,8 @@ export default function TechList() {
               setSelected({
                 src: node,
                 name: "NodeJS",
+                top: "0%",
+                left: "50%",
               });
             }, 100);
           }}
@@ -63,7 +67,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={node}
             alt="NodeJS"
-            className="absolute top-[3%] left-[calc(50%-32px)]"
+            className="absolute top-[3%] left-[calc(50%-32px)] md:top-[0%]"
           />
         </motion.button>
         <motion.button
@@ -74,6 +78,8 @@ export default function TechList() {
               setSelected({
                 src: html,
                 name: "HTML5",
+                top: "13%",
+                left: "90%",
               });
             }, 100);
           }}
@@ -86,7 +92,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={html}
             alt="HTML5"
-            className="absolute top-[13%] left-[calc(83%-32px)]"
+            className="absolute top-[13%] left-[calc(83%-32px)] md:left-[calc(90%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -97,6 +103,8 @@ export default function TechList() {
               setSelected({
                 src: sass,
                 name: "Sass",
+                top: "35%",
+                left: "110%",
               });
             }, 100);
           }}
@@ -109,7 +117,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={sass}
             alt="sass"
-            className="absolute top-[35%] left-[calc(97%-32px)]"
+            className="absolute top-[35%] left-[calc(97%-32px)] md:left-[calc(110%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -120,6 +128,8 @@ export default function TechList() {
               setSelected({
                 src: ts,
                 name: "TypeScript",
+                top: "58%",
+                left: "95%",
               });
             }, 100);
           }}
@@ -132,7 +142,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={ts}
             alt="TypeScript"
-            className="absolute top-[58%] left-[calc(88%-32px)]"
+            className="absolute top-[58%] left-[calc(88%-32px)] md:left-[calc(95%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -143,6 +153,8 @@ export default function TechList() {
               setSelected({
                 src: aws,
                 name: "AWS",
+                top: "80%",
+                left: "76%",
               });
             }, 100);
           }}
@@ -155,7 +167,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={aws}
             alt="AWS"
-            className="absolute top-[75%] left-[calc(75%-32px)]"
+            className="absolute top-[75%] left-[calc(75%-32px)] md:left-[calc(76%-32px)] md:top-[80%]"
           />
         </motion.button>
         <motion.button
@@ -166,6 +178,8 @@ export default function TechList() {
               setSelected({
                 src: tailwind,
                 name: "Tailwind",
+                top: "80%",
+                left: "20%",
               });
             }, 100);
           }}
@@ -178,7 +192,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={tailwind}
             alt="tailwind"
-            className="absolute top-[75%] left-[calc(25%-32px)]"
+            className="absolute top-[75%] left-[calc(25%-32px)] md:top-[80%] md:left-[calc(20%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -189,6 +203,8 @@ export default function TechList() {
               setSelected({
                 src: git,
                 name: "Git",
+                top: "58%",
+                left: "5%",
               });
             }, 100);
           }}
@@ -201,7 +217,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={git}
             alt="Git"
-            className="absolute top-[58%] left-[calc(12%-32px)]"
+            className="absolute top-[58%] left-[calc(12%-32px)] md:left-[calc(5%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -212,6 +228,8 @@ export default function TechList() {
               setSelected({
                 src: react,
                 name: "ReactJS",
+                top: "35%",
+                left: "-5%",
               });
             }, 100);
           }}
@@ -224,7 +242,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={react}
             alt="reactJS"
-            className="absolute top-[35%] left-[calc(5%-32px)]"
+            className="absolute top-[35%] left-[calc(5%-32px)] md:left-[calc(-5%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -235,6 +253,8 @@ export default function TechList() {
               setSelected({
                 src: css,
                 name: "CSS",
+                top: "13%",
+                left: "10%",
               });
             }, 100);
           }}
@@ -247,20 +267,28 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={css}
             alt="CSS"
-            className="absolute top-[13%] left-[calc(18%-32px)]"
+            className="absolute top-[13%] left-[calc(18%-32px)] md:left-[calc(10%-32px)]"
           />
         </motion.button>
+        {selected && (
+          <motion.div
+            className=" bg-white p-4 border mt-12 rounded-2xl w-4/5 flex items-center gap-2 shadow-lg absolute -bottom-16 left-[10%] h-24 md:w-3/5"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={
+              windowWidth >= 768 && {
+                top: `calc(${selected.top} - 64px)`,
+                left: `calc(${selected.left} - 50px)`,
+              }
+            }
+            onClick={() => setSelected(undefined)}
+          >
+            <img src={selected.src} alt="" />
+            <span className="font-bold tracking-wider">{selected.name}</span>
+          </motion.div>
+        )}
       </motion.div>
-      {selected && (
-        <motion.div
-          className=" bg-white p-4 border mt-12 rounded-2xl w-3/5 flex items-center gap-2 shadow-lg absolute bottom-0 left-[20%]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
-          <img src={selected.src} alt="" />
-          <span className="font-bold tracking-wider">{selected.name}</span>
-        </motion.div>
-      )}
     </div>
   );
 }

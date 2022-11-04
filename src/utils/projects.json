@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Pokédex_",
+    "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmRxmeuZ1MHDyKcHcP2AETZ4BlWZDW5raBFRQy07XZUrDiNp8frYYRXrxgYrCbPwue3KwT314y4_ruA8qjChXKs24UO0=w1920-h902",
+    "github": "https://github.com/GrajalesU/pokedex",
+    "site": "https://pokedex-lac-kappa.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "E-commerce",
+    "description": "E-commerce donde conjuntamente, desarrollé el backend y el frontend, además tiene desarrollo y despliegue continuo.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmT5vBRmejn01X0ezSDVgkpr1MrLmfvpqDvaF1AGyKAiVQoVENC5-11__OIP76oR-e20tIwgUIU5LcZejDZrIMbzGuLr=w1178-h902",
+    "github": "https://github.com/GrajalesU/oldwave"
+  },
+  {
+    "id": 3,
+    "name": "Tarjeta de banco",
+    "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmTo4O9TisFe38Ee6_-NoUCc26xOh2o_zAYfIzIhNboiq8J749JySR7OB0tfWbCpOUlFh54dRD58SCPajwvB1F_nMIudTw=w1920-h902",
+    "github": "https://github.com/GrajalesU/FrontendMentorCreditCard",
+    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app/"
+  },
+  {
+    "id": 4,
+    "name": "Generador de sitios web",
+    "description": "Aplicación que utiliza servicios de la nube para generar páginas web genéricas, donde los clientes pueden mostrar sus productos y los administradores pueden gestionar los clientes que hay en el sistema.",
+    "img": "https://grajalesu.github.io/portfolio/konectapp_1.jpg",
+    "github": "https://github.com/pikonecta/pikonecta"
+  },
+  {
+    "id": 5,
+    "name": "Blog",
+    "description": "Blog creado con Next 12, donde se transforman archivos de markdown en paginas del blog.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmQcYOLBTXEBikLz4D2_XL1iIingM66LzJA8b9jUlut7C8P6jSrVg4RJvgvJxFn7XBK0CCo0UKOaqDRHlh4YIfynQGfhvw=w1178-h902",
+    "github": "https://github.com/GrajalesU/nextjs-blog",
+    "site": "https://nextjs-blog-steel-one-51.vercel.app/"
+  },
+  {
+    "id": 6,
+    "name": "Este portafolio",
+    "description": "Este portafolio también hace parte de mis proyectos personales, espero que te esté gustando.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmSG0LjKOH8V6wi5clrDdA_ZpG-Noy8xtuzQfKojP2-UgoGL_UxZLVo9l7OHGbocRF3d89m1F4qqw7MM73153t9P1mXZDw=w1178-h902",
+    "github": "https://github.com/GrajalesU/portafolio-v2",
+    "site": "https://grajalesu.vercel.app/"
+  },
+  {
+    "id": 7,
+    "name": "Notificaciones",
+    "description": "Reto de Frontend mentor donde se simula una vista de notificaciones.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmQLsFxD0P2z1XvCwQdYlpS9QzoHpRetNT_Mpl3m8Yq4TmC7xv2H6i0gal_3rk7gnZjJhb7o1_STEbr7d2VyrGiklUZm0A=w1498-h902",
+    "github": "https://github.com/GrajalesU/Notifications-page",
+    "site": "https://notifications-page-sage.vercel.app/"
+  },
+  {
+    "id": 8,
+    "name": "Generador de contraseñas",
+    "description": "Reto de Hacktoberfest donde publicábamos nuestra versión del problema propuesto",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmTuGNvzt7HbNveNd9xDu8xivFlr8vWXNA2DhUE55pXTKs3GucQv385zD82E0uI1sWa4jcqVO7LpyFYURWfBPE2U6lA8=w1920-h902",
+    "github": "https://github.com/GrajalesU/password-generator",
+    "site": "https://hacktoberfest-2022.vercel.app/entry/grajalesu"
+  },
+  {
+    "id": 9,
+    "name": "Generador de consejos",
+    "description": "Reto de Frontend mentor donde se consume una API y se muestra un consejo al azar.",
+    "img": "https://lh3.googleusercontent.com/drive-viewer/AJc5JmQihi3Br3wDn1kTyshoZ-v4dA1aCezCHIebHO0e5jOPsj_UOPY4eRADxPYkswujPpBNWJPLhwGCIko0T2s0dC3ICmNh=w1178-h902",
+    "github": "https://github.com/GrajalesU/AdviseGenerator",
+    "site": "https://advise-generator-nu.vercel.app/"
+  }
+]

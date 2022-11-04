@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "../Card/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import wave from "../../assets/background/wave-projects.png";
 import waveD from "../../assets/background/wave-projects-desktop.png";
+import projects from "../../utils/projects.json";
 
 export default function Projects() {
   return (
@@ -46,15 +47,11 @@ export default function Projects() {
               },
             }}
           >
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card />
-            </SwiperSlide>
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <Card {...project} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

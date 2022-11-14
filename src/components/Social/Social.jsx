@@ -12,10 +12,7 @@ export default function Social() {
     md:flex-col md:fixed md:left-[calc(98%-64px)] md:bottom-[12%] md:gap-4"
     >
       <img src={line} alt="line" className="hidden w-px ml-8 md:block " />
-      <a
-        href="https://grajalesu.github.io/portfolio/cv_JuanManuelGrajales.pdf"
-        target="_blank"
-      >
+      <a href="/Juan-Manuel-Grajales-Hoja-de-vida.pdf" target="_blank">
         <motion.img
           src={resume}
           alt="resume"

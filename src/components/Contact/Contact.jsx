@@ -47,10 +47,10 @@ export default function Contact() {
               alt="hired employee"
               className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] "
             />
-            <h2 className="w-full text-center text-xl font-normal pt-16 mb-11 md:text-2xl">
+            <h2 className="w-full text-center text-5xl font-bold pt-16 mb-11 md:text-5xl">
               CONTÁCTAME
             </h2>
-            <p className="w-10/12 mb-16 mx-auto font-bold text-lg tracking-wide md:text-xl">
+            <p className="w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl">
               Envíame un email a{" "}
               <a
                 href="mailto: juan.grajalesu@gmail.com"

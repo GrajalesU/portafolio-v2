@@ -18,24 +18,21 @@ export default function About() {
   // }, [windowWidth]);
   return (
     <div className="w-full min-h-screen relative">
-      <div className="md:max-w-lg md:pt-[15%] md:pl-8">
-        <h2 className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-44">
-          SOBRE MI
-        </h2>
+      <div className="md:max-w-xl md:pt-[15%] md:pl-10 ml-10">
         <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg md:text-xl">
-          <span>¡Hola!</span>
-          <p className="mb-8">
-            Soy <b>Juan Manuel Grajales</b> y vivo en Colombia.
-          </p>
-          <p>
-            Soy desarrollador Frontend JR y me encanta crear experiencias web
+          <small>¡Hola! 👋</small>
+          <h1 className="text-5xl mb-8">
+            Soy <b>Juan Manuel Grajales</b>
+          </h1>
+          <i>
+            Desarrollador Frontend apasionado por crear experiencias web
             increíbles.
-          </p>
+          </i>
         </div>
         <img
           src={head}
           alt="Waiter seen the description"
-          className="float-right mr-5 md:absolute md:top-8 md:right-[10%] md:w-64 md:-rotate-45"
+          className="float-right mr-5 md:absolute md:top-20 md:right-[15%] md:w-72 md:-rotate-45"
         />
         <Social />
       </div>

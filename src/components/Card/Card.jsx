@@ -5,7 +5,7 @@ export default function Card({ name, description, img, github, site }) {
       <div className="w-full h-64 bg-amber-100 flex mb-9">
         <img
           src={img}
-          alt="preview del proyecto"
+          alt={`preview del proyecto ${name}`}
           className="object-contain mx-auto"
         />
       </div>

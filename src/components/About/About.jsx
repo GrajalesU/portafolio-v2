@@ -17,9 +17,9 @@ export default function About() {
   //   }
   // }, [windowWidth]);
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-[95vh] relative">
       <div className="md:max-w-lg md:pt-[15%] md:pl-8">
-        <h2 className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-44 font-bold">
+        <h2 className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-32 font-bold">
           SOBRE MI
         </h2>
         <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg md:text-xl">

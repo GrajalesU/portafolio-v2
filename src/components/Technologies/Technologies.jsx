@@ -9,7 +9,7 @@ export default function Technologies() {
         <h2 className="w-full text-right pt-4 pr-6 text-xl mb-10 md:pr-10 md:-translate-y-48 md:text-2xl font-bold">
           TECNOLOGÍAS
         </h2>
-        <p className="w-4/5 mx-auto tracking-wide text-lg mb-14 md:text-right md:text-xl md:max-w-lg">
+        <p className="w-4/5 mx-auto tracking-wide text-lg mb-14 md:text-right md:text-xl md:max-w-lg relative z-20">
           Estas son algunas de las tecnologías y herramientas con las que he
           trabajado.
         </p>

@@ -38,7 +38,7 @@ export default function Theme() {
       checked={theme === "dark"}
       onChange={handleThemeSwitch}
       size={32}
-      className = 'absolute top-4 right-4 z-30 md:fixed md:right-3 md:bottom-[12%]'
+      className = 'absolute top-4 right-4 z-30 md:fixed md:right-[0.85rem] md:bottom-[12%]'
     />
   );
 }

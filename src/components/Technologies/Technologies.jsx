@@ -4,7 +4,7 @@ import wave from "../../assets/background/wave-tech.png";
 import waveD from "../../assets/background/wave-tech-desktop.png";
 export default function Technologies() {
   return (
-    <div className="w-full min-h-screen relative md:flex md:flex-row-reverse md:items-center">
+    <div className="w-full min-h-screen relative md:flex md:flex-row-reverse md:items-center dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <div className="md:mr-24 lg:mr-40">
         <h2 className="w-full text-right pt-4 pr-6 text-xl mb-10 md:pr-10 md:-translate-y-48 md:text-2xl font-bold">
           TECNOLOGÍAS
@@ -17,7 +17,7 @@ export default function Technologies() {
       <TechList />
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
-        <img src={wave} className="absolute bottom-0 w-full -z-10" />
+        <img src={wave} className="absolute bottom-0 w-full -z-10 dark:z-10 dark:invert-[20%]" />
       </picture>
     </div>
   );

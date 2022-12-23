@@ -34,18 +34,18 @@ export default function Contact() {
   }
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-screen relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
-        <img src={wave} className="absolute w-full -z-10" />
+        <img src={wave} className="absolute w-full -z-10 dark:z-10 dark:invert-[20%]" />
       </picture>
-      <div className="max-w-3xl mx-auto relative">
+      <div className="max-w-3xl mx-auto relative z-20">
         {!messageSended ? (
           <div>
             <img
               src={hired}
               alt="hired employee"
-              className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] "
+              className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert dark:contrast-[3]"
             />
             <h2 className="w-full text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
               CONTÁCTAME
@@ -54,7 +54,7 @@ export default function Contact() {
               Envíame un email a{" "}
               <a
                 href="mailto: juan.grajalesu@gmail.com"
-                className="text-cyan-600 hover:text-cyan-500"
+                className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-400"
               >
                 este correo
               </a>{" "}
@@ -76,7 +76,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="nombre"
-                  className="bg-sky-400/[.25] p-1"
+                  className="bg-sky-400/[.25] p-1 dark:bg-sky-700/[.25]"
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
@@ -92,7 +92,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="correo"
-                  className="bg-sky-400/[.25] p-1"
+                  className="bg-sky-400/[.25] p-1 dark:bg-sky-700/[.25]"
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
@@ -107,7 +107,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="mensaje"
-                  className="bg-sky-400/[.25] min-h-[200px] "
+                  className="bg-sky-400/[.25] min-h-[200px] dark:bg-sky-700/[.25] "
                   {...register("message", { required: true })}
                 />
                 {errors.message && (
@@ -118,7 +118,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-sky-300 w-full mx-auto p-2 rounded-lg text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
+                className="bg-sky-300 dark:bg-sky-800 w-full mx-auto p-2 rounded-lg text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
               >
                 Enviar
               </button>

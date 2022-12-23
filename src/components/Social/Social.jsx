@@ -11,12 +11,12 @@ export default function Social() {
       className="flex w-full justify-around absolute bottom-5 z-20
     md:flex-col md:fixed md:left-[calc(98%-64px)] md:bottom-[12%] md:gap-4"
     >
-      <img src={line} alt="line" className="hidden w-px ml-5 md:block " />
+      <img src={line} alt="line" className="hidden w-px ml-5 md:block dark:invert" />
       <a href="/Juan-Manuel-Grajales-Hoja-de-vida.pdf" target="_blank">
         <motion.img
           src={resume}
           alt="resume"
-          className="hover:cursor-pointer w-10"
+          className="hover:cursor-pointer w-10 dark:invert"
           whileHover={{
             scale: 1.1,
             transition: { duration: 0.2 },
@@ -30,7 +30,7 @@ export default function Social() {
         <motion.img
           src={linkedIn}
           alt="linkedIn"
-          className="hover:cursor-pointer w-10"
+          className="hover:cursor-pointer w-10 dark:invert"
           whileHover={{
             scale: 1.1,
             transition: { duration: 0.2 },
@@ -41,7 +41,7 @@ export default function Social() {
         <motion.img
           src={github}
           alt="github"
-          className="hover:cursor-pointer w-10"
+          className="hover:cursor-pointer w-10 dark:invert"
           whileHover={{
             scale: 1.1,
             transition: { duration: 0.2 },
@@ -51,7 +51,7 @@ export default function Social() {
       <img
         src={line}
         alt="line"
-        className="hidden h-1/4 absolute -bottom-[28%] w-px ml-5 md:block"
+        className="hidden h-1/4 absolute -bottom-[28%] w-px ml-5 md:block dark:invert"
       />
     </div>
   );

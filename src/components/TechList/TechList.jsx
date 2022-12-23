@@ -32,7 +32,7 @@ export default function TechList() {
     show: { opacity: 1 },
   };
   return (
-    <div className="w-full min-h-[550px] relative">
+    <div className="w-full min-h-[550px] relative z-20">
       <motion.div
         className="relative w-[320px] h-[450px] pt-20 mx-auto"
         variants={container}
@@ -43,7 +43,7 @@ export default function TechList() {
         <img
           src={center}
           alt="buddy with headphones"
-          className="mx-auto w-4/5"
+          className="mx-auto w-4/5 dark:invert dark:contrast-[3]"
         />
         <motion.button
           variants={item}
@@ -67,7 +67,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={node}
             alt="NodeJS"
-            className="absolute top-[3%] left-[calc(50%-32px)] md:top-[0%]"
+            className="absolute dark:invert top-[3%] left-[calc(50%-32px)] md:top-[0%]"
           />
         </motion.button>
         <motion.button
@@ -92,7 +92,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={html}
             alt="HTML5"
-            className="absolute top-[13%] left-[calc(83%-32px)] md:left-[calc(90%-32px)]"
+            className="absolute dark:invert top-[13%] left-[calc(83%-32px)] md:left-[calc(90%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -117,7 +117,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={sass}
             alt="sass"
-            className="absolute top-[35%] left-[calc(97%-32px)] md:left-[calc(110%-32px)]"
+            className="absolute dark:invert top-[35%] left-[calc(97%-32px)] md:left-[calc(110%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -142,7 +142,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={ts}
             alt="TypeScript"
-            className="absolute top-[58%] left-[calc(88%-32px)] md:left-[calc(95%-32px)]"
+            className="absolute dark:invert top-[58%] left-[calc(88%-32px)] md:left-[calc(95%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -167,7 +167,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={aws}
             alt="AWS"
-            className="absolute top-[75%] left-[calc(75%-32px)] md:left-[calc(76%-32px)] md:top-[80%]"
+            className="absolute dark:invert top-[75%] left-[calc(75%-32px)] md:left-[calc(76%-32px)] md:top-[80%]"
           />
         </motion.button>
         <motion.button
@@ -192,7 +192,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={tailwind}
             alt="tailwind"
-            className="absolute top-[75%] left-[calc(25%-32px)] md:top-[80%] md:left-[calc(20%-32px)]"
+            className="absolute dark:invert top-[75%] left-[calc(25%-32px)] md:top-[80%] md:left-[calc(20%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -217,7 +217,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={git}
             alt="Git"
-            className="absolute top-[58%] left-[calc(12%-32px)] md:left-[calc(5%-32px)]"
+            className="absolute dark:invert top-[58%] left-[calc(12%-32px)] md:left-[calc(5%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -242,7 +242,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={react}
             alt="reactJS"
-            className="absolute top-[35%] left-[calc(5%-32px)] md:left-[calc(-5%-32px)]"
+            className="absolute dark:invert top-[35%] left-[calc(5%-32px)] md:left-[calc(-5%-32px)]"
           />
         </motion.button>
         <motion.button
@@ -267,7 +267,7 @@ export default function TechList() {
             whileTap={{ scale: 0.9 }}
             src={css}
             alt="CSS"
-            className="absolute top-[13%] left-[calc(18%-32px)] md:left-[calc(10%-32px)]"
+            className="absolute dark:invert top-[13%] left-[calc(18%-32px)] md:left-[calc(10%-32px)]"
           />
         </motion.button>
         {selected && (
@@ -285,7 +285,7 @@ export default function TechList() {
             onClick={() => setSelected(undefined)}
           >
             <img src={selected.src} alt="" />
-            <span className="font-bold tracking-wider">{selected.name}</span>
+            <span className="font-bold tracking-wider text-black">{selected.name}</span>
           </motion.div>
         )}
       </motion.div>

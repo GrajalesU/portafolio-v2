@@ -1,11 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Pokédex_",
-    "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/pokedex_qnxjsz.png",
-    "github": "https://github.com/GrajalesU/pokedex",
-    "site": "https://pokedex-lac-kappa.vercel.app/"
+    "name": "Generador de sitios web",
+    "description": "Aplicación que utiliza servicios de la nube para generar páginas web genéricas, donde los clientes pueden mostrar sus productos y los administradores pueden gestionar los clientes que hay en el sistema.",
+    "img": "https://grajalesu.github.io/portfolio/konectapp_1.jpg",
+    "github": "https://github.com/pikonecta/pikonecta"
   },
   {
     "id": 2,
@@ -16,34 +15,35 @@
   },
   {
     "id": 3,
-    "name": "Tarjeta de banco",
-    "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338495/proyectos/card_xn8hf0.png",
-    "github": "https://github.com/GrajalesU/FrontendMentorCreditCard",
-    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app/"
+    "name": "Petgram",
+    "description": "Clon de Instagram, conectado con graphQL, puedes crear tu cuenta e interactuar con los posts de otros amantes a las mascotas.",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314303/proyectos/petgram_apgoah.png",
+    "github": "https://github.com/GrajalesU/curso-react-avanzado",
+    "site": "https://petgram-tau-rosy.vercel.app"
   },
   {
     "id": 4,
-    "name": "Generador de sitios web",
-    "description": "Aplicación que utiliza servicios de la nube para generar páginas web genéricas, donde los clientes pueden mostrar sus productos y los administradores pueden gestionar los clientes que hay en el sistema.",
-    "img": "https://grajalesu.github.io/portfolio/konectapp_1.jpg",
-    "github": "https://github.com/pikonecta/pikonecta"
+    "name": "Plantpedia",
+    "description": "Enciclopedia de plantas, con arquitectura Jamstack, gestión de CMS, internacionalización y conectado con graphQL.",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314304/proyectos/plantpedia_vreufv.png",
+    "github": "https://github.com/grajalesu/platzi-plantpedia",
+    "site": "https://platzi-plantpedia-grajalesu.vercel.app"
   },
   {
     "id": 5,
-    "name": "Blog",
-    "description": "Blog creado con Next 12, donde se transforman archivos de markdown en paginas del blog.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/blog_muohw7.png",
-    "github": "https://github.com/GrajalesU/nextjs-blog",
-    "site": "https://nextjs-blog-steel-one-51.vercel.app/"
-  },
-  {
-    "id": 6,
     "name": "Este portafolio",
     "description": "Este portafolio también hace parte de mis proyectos personales, espero que te esté gustando.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/portfolio_y25iof.png",
     "github": "https://github.com/GrajalesU/portafolio-v2",
     "site": "https://grajalesu.vercel.app/"
+  },
+  {
+    "id": 6,
+    "name": "Pokédex_",
+    "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar.",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/pokedex_qnxjsz.png",
+    "github": "https://github.com/GrajalesU/pokedex",
+    "site": "https://pokedex-lac-kappa.vercel.app/"
   },
   {
     "id": 7,
@@ -68,5 +68,13 @@
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/advice_vcy9zw.png",
     "github": "https://github.com/GrajalesU/AdviseGenerator",
     "site": "https://advise-generator-nu.vercel.app/"
+  },
+  {
+    "id": 5,
+    "name": "Tarjeta de banco",
+    "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado.",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338495/proyectos/card_xn8hf0.png",
+    "github": "https://github.com/GrajalesU/FrontendMentorCreditCard",
+    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app/"
   }
 ]

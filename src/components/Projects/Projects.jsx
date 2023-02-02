@@ -1,23 +1,28 @@
 import React from "react";
-import Card from "../Card/Card";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import wave from "../../assets/background/wave-projects.png";
+import { Swiper, SwiperSlide } from "swiper/react";
 import waveD from "../../assets/background/wave-projects-desktop.png";
+import wave from "../../assets/background/wave-projects.png";
 import projects from "../../utils/projects.json";
+import Card from "../Card/Card";
 
 export default function Projects() {
   return (
     <div className="w-full min-h-screen relative pb-20 dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
-        <img src={wave} className="absolute top-0 w-full -z-10 dark:z-0 dark:invert-[20%]" />
+        <img
+          src={wave}
+          className="absolute top-0 w-full -z-10 dark:z-0 dark:invert-[20%]"
+        />
       </picture>
 
       <div className=" md:pl-8">
-        <h2 className="pt-5 mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative ">MIS PROYECTOS</h2>
+        <h2 className="pt-5 mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative ">
+          MIS PROYECTOS
+        </h2>
         <p
           className="w-4/5 mx-auto mb-8 text-lg  tracking-wide
           md:w-full md:pl-4 md:mb-16 md:text-xl md:max-w-lg md:ml-0
@@ -30,7 +35,7 @@ export default function Projects() {
           <Swiper
             navigation={true}
             modules={[Navigation]}
-            loop={true}
+            loop={false}
             centeredSlides={true}
             centeredSlidesBounds={true}
             breakpoints={{

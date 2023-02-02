@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
+import line from "../../assets/background/line.png";
 import github from "../../assets/icons/GitHub.png";
 import linkedIn from "../../assets/icons/LinkedIn 3.png";
 import resume from "../../assets/icons/Resume.png";
-import line from "../../assets/background/line.png";
-import { motion } from "framer-motion";
 
 export default function Social() {
   return (
@@ -11,8 +11,17 @@ export default function Social() {
       className="flex w-full justify-around absolute bottom-5 z-20
     md:flex-col md:fixed md:left-[calc(98%-64px)] md:bottom-[12%] md:gap-4"
     >
-      <img src={line} alt="line" className="hidden w-px ml-5 md:block dark:invert" />
-      <a href="/Juan-Manuel-Grajales-Hoja-de-vida.pdf" target="_blank">
+      <img
+        src={line}
+        alt="line"
+        className="hidden w-px ml-5 md:block dark:invert"
+      />
+      <a
+        href="/Juan-Manuel-Grajales-Hoja-de-vida.pdf"
+        target="_blank"
+        className="flex flex-col-reverse md:flex-col items-center md:items-start"
+      >
+        <span className="text-xs font-bold md:ml-3">cv</span>
         <motion.img
           src={resume}
           alt="resume"
@@ -26,7 +35,9 @@ export default function Social() {
       <a
         href="https://www.linkedin.com/in/juan-manuel-grajales-urquijo/"
         target="_blank"
+        className="flex flex-col-reverse md:flex-col items-center md:items-start"
       >
+        <span className="text-xs font-bold">linkedIn</span>
         <motion.img
           src={linkedIn}
           alt="linkedIn"
@@ -37,7 +48,12 @@ export default function Social() {
           }}
         />
       </a>
-      <a href="https://github.com/grajalesu" target="_blank">
+      <a
+        href="https://github.com/grajalesu"
+        target="_blank"
+        className="flex flex-col-reverse md:flex-col items-center md:items-start"
+      >
+        <span className="text-xs font-bold">github</span>
         <motion.img
           src={github}
           alt="github"

@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import head from "../../assets/about/about-mobile.png";
+import waveD from "../../assets/background/wave-about-desktop.png";
+import wave from "../../assets/background/wave-about.png";
 import Social from "../Social/Social";
 import Theme from "../Theme/Theme";
-import wave from "../../assets/background/wave-about.png";
-import waveD from "../../assets/background/wave-about-desktop.png";
-import useWindowSize from "../../hooks/useWindowSize";
 
 export default function About() {
   return (

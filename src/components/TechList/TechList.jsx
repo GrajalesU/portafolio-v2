@@ -1,14 +1,14 @@
-import center from "../../assets/technologies/center.png";
-import node from "../../assets/technologies/Node Js.png";
-import html from "../../assets/technologies/Html.png";
-import css from "../../assets/technologies/CSS3.png";
-import sass from "../../assets/technologies/Sass.png";
-import react from "../../assets/technologies/React.png";
-import ts from "../../assets/technologies/TypeScript.png";
-import git from "../../assets/technologies/Git.png";
-import tailwind from "../../assets/technologies/Tailwind.png";
-import aws from "../../assets/technologies/AWS.png";
 import { motion } from "framer-motion";
+import aws from "../../assets/technologies/AWS.png";
+import css from "../../assets/technologies/CSS3.png";
+import git from "../../assets/technologies/Git.png";
+import html from "../../assets/technologies/Html.png";
+import node from "../../assets/technologies/Node Js.png";
+import react from "../../assets/technologies/React.png";
+import sass from "../../assets/technologies/Sass.png";
+import tailwind from "../../assets/technologies/Tailwind.png";
+import ts from "../../assets/technologies/TypeScript.png";
+import center from "../../assets/technologies/center.png";
 
 import React, { useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -285,7 +285,9 @@ export default function TechList() {
             onClick={() => setSelected(undefined)}
           >
             <img src={selected.src} alt="" />
-            <span className="font-bold tracking-wider text-black">{selected.name}</span>
+            <span className="font-bold tracking-wider text-black">
+              {selected.name}
+            </span>
           </motion.div>
         )}
       </motion.div>

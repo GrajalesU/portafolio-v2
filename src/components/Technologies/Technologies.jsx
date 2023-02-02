@@ -1,7 +1,7 @@
 import React from "react";
-import TechList from "../TechList/TechList";
-import wave from "../../assets/background/wave-tech.png";
 import waveD from "../../assets/background/wave-tech-desktop.png";
+import wave from "../../assets/background/wave-tech.png";
+import TechList from "../TechList/TechList";
 export default function Technologies() {
   return (
     <div className="w-full min-h-screen relative md:flex md:flex-row-reverse md:items-center dark:bg-slate-800 dark:text-white transition-colors duration-700">
@@ -17,7 +17,10 @@ export default function Technologies() {
       <TechList />
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
-        <img src={wave} className="absolute bottom-0 w-full -z-10 dark:z-10 dark:invert-[20%]" />
+        <img
+          src={wave}
+          className="absolute bottom-0 w-full -z-10 dark:z-10 dark:invert-[20%]"
+        />
       </picture>
     </div>
   );

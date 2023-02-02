@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
-import hired from "../../assets/background/hired.png";
-import wave from "../../assets/background/wave-contact.png";
-import waveD from "../../assets/background/wave-contact-desktop.png";
-import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import hired from "../../assets/background/hired.png";
+import waveD from "../../assets/background/wave-contact-desktop.png";
+import wave from "../../assets/background/wave-contact.png";
 
 export default function Contact() {
   const [messageSended, setMessageSended] = useState(false);
@@ -37,7 +37,10 @@ export default function Contact() {
     <div className="w-full min-h-screen relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
-        <img src={wave} className="absolute w-full -z-10 dark:z-10 dark:invert-[20%]" />
+        <img
+          src={wave}
+          className="absolute w-full -z-10 dark:z-10 dark:invert-[20%]"
+        />
       </picture>
       <div className="max-w-3xl mx-auto relative z-20">
         {!messageSended ? (

@@ -35,7 +35,15 @@
     "description": "Este portafolio también hace parte de mis proyectos personales, espero que te esté gustando.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/portfolio_y25iof.png",
     "github": "https://github.com/GrajalesU/portafolio-v2",
-    "site": "https://grajalesu.vercel.app/"
+    "site": "https://grajalesu.vercel.app"
+  },
+  {
+    "id": 5,
+    "name": "AguacateMor",
+    "description": "E-commerce de Aguacates",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675315833/proyectos/aguacateMor_csl5z9.png",
+    "github": "https://github.com/GrajalesU/nextjs-basico",
+    "site": "https://aguacate-mor.vercel.app"
   },
   {
     "id": 6,
@@ -43,7 +51,15 @@
     "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/pokedex_qnxjsz.png",
     "github": "https://github.com/GrajalesU/pokedex",
-    "site": "https://pokedex-lac-kappa.vercel.app/"
+    "site": "https://pokedex-lac-kappa.vercel.app"
+  },
+  {
+    "id": 6,
+    "name": "Contador Año Nuevo",
+    "description": "Sitio animado donde se hace un contador que avisa cuándo es año nuevo",
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675315833/proyectos/new_year_t34ouv.png",
+    "github": "https://github.com/GrajalesU/FrontendMentor-Countdown",
+    "site": "https://frontend-mentor-countdown.vercel.app"
   },
   {
     "id": 7,
@@ -51,7 +67,7 @@
     "description": "Reto de Frontend mentor donde se simula una vista de notificaciones.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/notifications_dryfhf.png",
     "github": "https://github.com/GrajalesU/Notifications-page",
-    "site": "https://notifications-page-sage.vercel.app/"
+    "site": "https://notifications-page-sage.vercel.app"
   },
   {
     "id": 8,
@@ -67,7 +83,7 @@
     "description": "Reto de Frontend mentor donde se consume una API y se muestra un consejo al azar.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/advice_vcy9zw.png",
     "github": "https://github.com/GrajalesU/AdviseGenerator",
-    "site": "https://advise-generator-nu.vercel.app/"
+    "site": "https://advise-generator-nu.vercel.app"
   },
   {
     "id": 5,
@@ -75,6 +91,6 @@
     "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338495/proyectos/card_xn8hf0.png",
     "github": "https://github.com/GrajalesU/FrontendMentorCreditCard",
-    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app/"
+    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app"
   }
 ]

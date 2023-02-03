@@ -9,7 +9,7 @@ export default function Social() {
   return (
     <div
       className="flex w-full justify-around absolute bottom-5 z-20
-    md:flex-col md:fixed md:left-[calc(98%-64px)] md:bottom-[12%] md:gap-4"
+    md:flex-col md:fixed md:left-[calc(98%-64px)] md:bottom-[12%] md:gap-4 md:min-h-screen"
     >
       <img
         src={line}

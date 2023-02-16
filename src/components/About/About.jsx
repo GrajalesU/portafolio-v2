@@ -7,22 +7,20 @@ import Theme from "../Theme/Theme";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="w-full min-h-[95vh] relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <Theme />
       <div className="md:max-w-lg md:pt-[15%] md:pl-8">
         <h2 className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-32 font-bold uppercase">
-          {t('about')}
+          {t("about")}
         </h2>
         <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg md:text-xl relative z-20">
-          <span>{t('hi')}</span>
+          <span>{t("hi")}</span>
           <p className="mb-8">
-          {t('im')} <b>Juan Manuel Grajales</b> {t('living')}
+            {t("im")} <b>Juan Manuel Grajales</b> {t("living")}
           </p>
-          <p>
-          {t('aboutDescription')}
-          </p>
+          <p>{t("aboutDescription")}</p>
         </div>
         <img
           src={head}

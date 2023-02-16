@@ -8,7 +8,7 @@ import wave from "../../assets/background/wave-contact.png";
 import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const [messageSended, setMessageSended] = useState(false);
   const form = useRef();
   const {
@@ -53,17 +53,17 @@ export default function Contact() {
               className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert dark:contrast-[3]"
             />
             <h2 className="w-full uppercase text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
-              {t('contact')}
+              {t("contact")}
             </h2>
             <p className="w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl">
-            {t('emailMsg')}{" "}
+              {t("emailMsg")}{" "}
               <a
                 href="mailto: juan.grajalesu@gmail.com"
                 className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-400"
               >
-                {t('email')}
+                {t("email")}
               </a>{" "}
-              {t('contactDescription')}
+              {t("contactDescription")}
             </p>
             <form
               ref={form}
@@ -76,7 +76,7 @@ export default function Contact() {
                   className="font-bold"
                   placeholder="Introduce tu nombre"
                 >
-                  {t('formName')}
+                  {t("formName")}
                 </label>
                 <input
                   type="text"
@@ -85,14 +85,12 @@ export default function Contact() {
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
-                  <small className="text-red-600">
-                    {t('required')}
-                  </small>
+                  <small className="text-red-600">{t("required")}</small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-2">
                 <label htmlFor="correo" className="font-bold ">
-                {t('formEmail')}
+                  {t("formEmail")}
                 </label>
                 <input
                   type="email"
@@ -101,14 +99,12 @@ export default function Contact() {
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
-                  <small className="text-red-600">
-                    {t('required')}
-                  </small>
+                  <small className="text-red-600">{t("required")}</small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-14">
                 <label htmlFor="mensaje" className="font-bold">
-                {t('formMsg')}
+                  {t("formMsg")}
                 </label>
                 <textarea
                   id="mensaje"
@@ -116,16 +112,14 @@ export default function Contact() {
                   {...register("message", { required: true })}
                 />
                 {errors.message && (
-                  <small className="text-red-600">
-                    {t('required')}
-                  </small>
+                  <small className="text-red-600">{t("required")}</small>
                 )}
               </div>
               <button
                 type="submit"
                 className="bg-sky-300 dark:bg-sky-800 w-full mx-auto p-2 rounded-lg text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
               >
-                {t('formSubmit')}
+                {t("formSubmit")}
               </button>
             </form>
           </div>
@@ -136,9 +130,7 @@ export default function Contact() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
           >
-            Gracias por contactarme. Lo más pronto posible estaré comunicándome
-            contigo, espero que puedan salir buenas oportunidades gracias a
-            esto.
+            {t("thanks")}
           </motion.span>
         )}
       </div>

@@ -1,0 +1,21 @@
+{
+    "about": "sobre mi",
+    "hi": "¡ Hola !",
+    "im": "Soy",
+    "living": " y vivo en Colombia",
+    "aboutDescription": "Soy Desarrollador Frontend y me encanta crear experiencias web increíbles",
+    "projects": "mis proyectos",
+    "projectsDescription": "Aquí tengo algunos de los proyectos que he realizado, ¡espero que te gusten!",
+    "technologies": "tecnologías",
+    "technologiesDescription": "Estas son algunas de las tecnologías y herramientas con las que he trabajado.",
+    "contact": "contáctame",
+    "emailMsg": "Envíame un email a",
+    "email": "este correo",
+    "contactDescription": "ó llena el siguiente formulario y estaremos en contacto.",
+    "formName": "Nombre",
+    "required": "Este campo es necesario",
+    "formEmail": "Correo",
+    "formMsg": "Mensaje",
+    "formSubmit": "Enviar",
+    "thanks": " Gracias por contactarme. Lo más pronto posible estaré comunicándome \ncontigo, espero que puedan salir buenas oportunidades gracias a \nesto."
+}

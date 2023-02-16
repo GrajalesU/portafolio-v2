@@ -7,8 +7,10 @@ import waveD from "../../assets/background/wave-projects-desktop.png";
 import wave from "../../assets/background/wave-projects.png";
 import projects from "../../utils/projects.json";
 import Card from "../Card/Card";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   return (
     <div className="w-full min-h-screen relative pb-20 dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
@@ -20,16 +22,15 @@ export default function Projects() {
       </picture>
 
       <div className=" md:pl-8">
-        <h2 className="pt-5 mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative ">
-          MIS PROYECTOS
+        <h2 className="pt-5 uppercase mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative ">
+          {t("projects")}
         </h2>
         <p
           className="w-4/5 mx-auto mb-8 text-lg  tracking-wide
           md:w-full md:pl-4 md:mb-16 md:text-xl md:max-w-lg md:ml-0
           dark:z-10 dark:relative"
         >
-          Aquí tengo algunos de los proyectos que he realizado, ¡espero que te
-          gusten!
+          {t('projectsDescription')}
         </p>
         <div className="mb-8 w-4/5 mx-auto pr-4">
           <Swiper

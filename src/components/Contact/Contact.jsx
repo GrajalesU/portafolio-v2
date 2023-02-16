@@ -5,8 +5,10 @@ import { useForm } from "react-hook-form";
 import hired from "../../assets/background/hired.png";
 import waveD from "../../assets/background/wave-contact-desktop.png";
 import wave from "../../assets/background/wave-contact.png";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation()
   const [messageSended, setMessageSended] = useState(false);
   const form = useRef();
   const {
@@ -50,18 +52,18 @@ export default function Contact() {
               alt="hired employee"
               className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert dark:contrast-[3]"
             />
-            <h2 className="w-full text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
-              CONTÁCTAME
+            <h2 className="w-full uppercase text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
+              {t('contact')}
             </h2>
             <p className="w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl">
-              Envíame un email a{" "}
+            {t('emailMsg')}{" "}
               <a
                 href="mailto: juan.grajalesu@gmail.com"
                 className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-400"
               >
-                este correo
+                {t('email')}
               </a>{" "}
-              ó llena el siguiente formulario y estaremos en contacto.
+              {t('contactDescription')}
             </p>
             <form
               ref={form}
@@ -74,7 +76,7 @@ export default function Contact() {
                   className="font-bold"
                   placeholder="Introduce tu nombre"
                 >
-                  Nombre
+                  {t('formName')}
                 </label>
                 <input
                   type="text"
@@ -84,13 +86,13 @@ export default function Contact() {
                 />
                 {errors.name && (
                   <small className="text-red-600">
-                    Este campo es necesario
+                    {t('required')}
                   </small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-2">
                 <label htmlFor="correo" className="font-bold ">
-                  Correo
+                {t('formEmail')}
                 </label>
                 <input
                   type="email"
@@ -100,13 +102,13 @@ export default function Contact() {
                 />
                 {errors.email && (
                   <small className="text-red-600">
-                    Este campo es necesario
+                    {t('required')}
                   </small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-14">
                 <label htmlFor="mensaje" className="font-bold">
-                  Mensaje
+                {t('formMsg')}
                 </label>
                 <textarea
                   id="mensaje"
@@ -115,7 +117,7 @@ export default function Contact() {
                 />
                 {errors.message && (
                   <small className="text-red-600">
-                    Este campo es necesario
+                    {t('required')}
                   </small>
                 )}
               </div>
@@ -123,7 +125,7 @@ export default function Contact() {
                 type="submit"
                 className="bg-sky-300 dark:bg-sky-800 w-full mx-auto p-2 rounded-lg text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
               >
-                Enviar
+                {t('formSubmit')}
               </button>
             </form>
           </div>

@@ -20,7 +20,6 @@ export default function Language() {
           key={language}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{duration:1}}
           className="font-bold uppercase text-xl w-3 text-center"
         >
           {language === "es" ? "S" : "N"}

@@ -8,7 +8,11 @@ export default function Language() {
     language === "es" ? changeLanguage("en") : changeLanguage("es");
   };
   return (
-    <button onClick={handleLanguage} className="flex items-center">
+    <motion.button
+    whileTap={{
+      translateY:-5
+    }}
+    onClick={handleLanguage} className="flex items-center">
       <span className="font-bold uppercase text-xl w-3.5 text-center">
         E
       </span>
@@ -16,10 +20,11 @@ export default function Language() {
           key={language}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
+          transition={{duration:1}}
           className="font-bold uppercase text-xl w-3 text-center"
         >
           {language === "es" ? "S" : "N"}
         </motion.span>
-    </button>
+    </motion.button>
   );
 }

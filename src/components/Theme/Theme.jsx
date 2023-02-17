@@ -34,11 +34,9 @@ export default function Theme() {
   };
   return (
     <DarkModeSwitch
-      style={{ marginBottom: "2rem" }}
       checked={theme === "dark"}
       onChange={handleThemeSwitch}
       size={32}
-      className="absolute top-4 right-4 z-30 md:fixed md:right-[0.95rem] md:bottom-[12%]"
     />
   );
 }

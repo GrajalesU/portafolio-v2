@@ -1,0 +1,23 @@
+{
+  "about": "about",
+  "hi": "Hi!",
+  "im": "I'm",
+  "living": " and I'm living in Colombia",
+  "aboutDescription": "I'm a Frontend Developer and I love creating amazing web experiences",
+  "projects": "projects",
+  "projectsDescription": "Here are some of the projects I have done, I hope you like them!",
+  "technologies": "technologies",
+  "technologiesDescription": "These are some of the technologies and tools I have worked with.",
+  "contact": "Get in touch",
+  "emailMsg": "Send me an email to",
+  "email": "this email",
+  "contactDescription": "or fill out the following form and we will be in touch.",
+  "formName": "Name",
+  "required": "This field is required",
+  "formEmail": "Email",
+  "formMsg": "Message",
+  "formSubmit": "Send",
+  "thanks": "Thank you for get in touch. I will be in touch as soon as possible. I hope this leads to good opportunities.",
+  "site": "Site",
+  "cv": "CV"
+}

@@ -6,9 +6,11 @@ import hired from "../../assets/background/hired.png";
 import waveD from "../../assets/background/wave-contact-desktop.png";
 import wave from "../../assets/background/wave-contact.png";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function Contact() {
   const { t } = useTranslation();
+  const { language } = i18next;
   const [messageSended, setMessageSended] = useState(false);
   const form = useRef();
   const {
@@ -55,7 +57,12 @@ export default function Contact() {
             <h2 className="w-full uppercase text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
               {t("contact")}
             </h2>
-            <p className="w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl">
+            <motion.p
+              key={language + "emailMsg"}
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              className="w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl"
+            >
               {t("emailMsg")}{" "}
               <a
                 href="mailto: juan.grajalesu@gmail.com"
@@ -64,7 +71,7 @@ export default function Contact() {
                 {t("email")}
               </a>{" "}
               {t("contactDescription")}
-            </p>
+            </motion.p>
             <form
               ref={form}
               className="w-4/5 mx-auto text-xl md:text-2xl"
@@ -85,13 +92,26 @@ export default function Contact() {
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
-                  <small className="text-red-600">{t("required")}</small>
+                  <motion.small
+                    key={language + "required1"}
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    className="text-red-600"
+                  >
+                    {t("required")}
+                  </motion.small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-2">
-                <label htmlFor="correo" className="font-bold ">
+                <motion.label
+                  key={language + "formEmail"}
+                  animate={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  htmlFor="correo"
+                  className="font-bold "
+                >
                   {t("formEmail")}
-                </label>
+                </motion.label>
                 <input
                   type="email"
                   id="correo"
@@ -99,28 +119,51 @@ export default function Contact() {
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
-                  <small className="text-red-600">{t("required")}</small>
+                  <motion.small
+                    key={language + "required2"}
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    className="text-red-600"
+                  >
+                    {t("required")}
+                  </motion.small>
                 )}
               </div>
               <div className="flex flex-col gap-1 mb-14">
-                <label htmlFor="mensaje" className="font-bold">
+                <motion.label
+                  key={language + "formMsg"}
+                  animate={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  htmlFor="mensaje"
+                  className="font-bold"
+                >
                   {t("formMsg")}
-                </label>
+                </motion.label>
                 <textarea
                   id="mensaje"
                   className="bg-sky-400/[.25] min-h-[200px] dark:bg-sky-700/[.25] "
                   {...register("message", { required: true })}
                 />
                 {errors.message && (
-                  <small className="text-red-600">{t("required")}</small>
+                  <motion.small
+                    key={language + "required3"}
+                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    className="text-red-600"
+                  >
+                    {t("required")}
+                  </motion.small>
                 )}
               </div>
-              <button
+              <motion.button
+                key={language + "submit"}
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
                 type="submit"
                 className="bg-sky-300 dark:bg-sky-800 w-full mx-auto p-2 rounded-lg text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
               >
                 {t("formSubmit")}
-              </button>
+              </motion.button>
             </form>
           </div>
         ) : (

@@ -3,24 +3,49 @@ import head from "../../assets/about/about-mobile.png";
 import waveD from "../../assets/background/wave-about-desktop.png";
 import wave from "../../assets/background/wave-about.png";
 import Social from "../Social/Social";
-import Theme from "../Theme/Theme";
 import { useTranslation } from "react-i18next";
+import Configuration from "../Configuration/Configuration";
+import i18next from "i18next";
+import { motion } from "framer-motion";
 
 export default function About() {
   const { t } = useTranslation();
+  const { language } = i18next;
   return (
     <div className="w-full min-h-[95vh] relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
-      <Theme />
+      <Configuration />
       <div className="md:max-w-lg md:pt-[15%] md:pl-8">
-        <h2 className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-32 font-bold uppercase">
+        <motion.h2
+          key={language + "about"}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          className=" pt-5 ml-4 mb-8 text-xl md:text-2xl md:mb-32 font-bold uppercase"
+        >
           {t("about")}
-        </h2>
+        </motion.h2>
         <div className="tracking-wide font-medium w-11/12 mx-auto mb-8 text-lg md:text-xl relative z-20">
-          <span>{t("hi")}</span>
-          <p className="mb-8">
+          <motion.span
+            key={language + "hi"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+          >
+            {t("hi")}
+          </motion.span>
+          <motion.p
+            key={language + "d1"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className="mb-8"
+          >
             {t("im")} <b>Juan Manuel Grajales</b> {t("living")}
-          </p>
-          <p>{t("aboutDescription")}</p>
+          </motion.p>
+          <motion.p
+            key={language + "d2"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+          >
+            {t("aboutDescription")}
+          </motion.p>
         </div>
         <img
           src={head}

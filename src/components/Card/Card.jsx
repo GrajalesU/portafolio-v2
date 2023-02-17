@@ -1,7 +1,11 @@
+import i18next from "i18next";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 export default function Card({ name, description, img, github, site }) {
   const { t } = useTranslation();
+  const { language } = i18next;
+
   return (
     <article className="w-72 h-[580px] shadow-xl bg-white dark:bg-slate-700 mx-auto mb-3 relative">
       <div className="w-full h-64 bg-amber-100 dark:bg-slate-500 flex mb-9">
@@ -24,11 +28,16 @@ export default function Card({ name, description, img, github, site }) {
           </button>
         )}
         {site && (
-          <button className="p-2  w-24 border-2 border-black dark:border-white rounded hover:bg-slate-50 dark:hover:bg-slate-800">
+          <motion.button
+            key={language + "site"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className="p-2  w-24 border-2 border-black dark:border-white rounded hover:bg-slate-50 dark:hover:bg-slate-800"
+          >
             <a href={site} target="_blank">
               {t("site")}
             </a>
-          </button>
+          </motion.button>
         )}
       </div>
     </article>

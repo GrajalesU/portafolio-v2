@@ -8,7 +8,7 @@ export default function Card({ name, description, img, github, site }) {
 
   return (
     <article className="w-72 h-[580px] shadow-xl bg-white dark:bg-slate-700 mx-auto mb-3 relative">
-      <div className="w-full h-64 bg-amber-100 dark:bg-slate-500 flex mb-9">
+      <div className="w-full h-64 flex mb-9">
         <img
           src={img}
           alt={`preview del proyecto ${name}`}

@@ -8,9 +8,11 @@ import wave from "../../assets/background/wave-projects.png";
 import projects from "../../utils/projects.json";
 import Card from "../Card/Card";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function Projects() {
   const { t } = useTranslation();
+  const { language } = i18next;
   return (
     <div className="w-full min-h-screen relative pb-20 dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
@@ -30,7 +32,7 @@ export default function Projects() {
           md:w-full md:pl-4 md:mb-16 md:text-xl md:max-w-lg md:ml-0
           dark:z-10 dark:relative"
         >
-          {t('projectsDescription')}
+          {t("projectsDescription")}
         </p>
         <div className="mb-8 w-4/5 mx-auto pr-4">
           <Swiper
@@ -56,7 +58,11 @@ export default function Projects() {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <Card {...project} />
+                <Card
+                  {...project}
+                  name={project[language].name}
+                  description={project[language].description}
+                />
               </SwiperSlide>
             ))}
           </Swiper>

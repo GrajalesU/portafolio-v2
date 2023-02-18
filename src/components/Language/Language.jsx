@@ -11,6 +11,7 @@ export default function Language() {
     <motion.button
       whileTap={{
         translateY: -5,
+        rotateY: 360,
       }}
       whileHover={{
         scale: 1.1,

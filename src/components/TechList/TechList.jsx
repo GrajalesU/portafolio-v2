@@ -43,7 +43,7 @@ export default function TechList() {
         <img
           src={center}
           alt="buddy with headphones"
-          className="mx-auto w-4/5 dark:invert dark:contrast-[3]"
+          className="mx-auto w-4/5 dark:invert contrast-[3]"
         />
         <motion.button
           variants={item}

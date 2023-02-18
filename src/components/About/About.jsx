@@ -50,7 +50,7 @@ export default function About() {
         <img
           src={head}
           alt="Waiter seen the description"
-          className="float-right mr-5 md:absolute md:top-20 md:right-[15%] md:w-72 md:-rotate-45 z-10 dark:z-30 dark:invert dark:contrast-[3]"
+          className="float-right mr-5 md:absolute md:top-20 md:right-[15%] md:w-72 md:-rotate-45 z-10 dark:z-30 dark:invert contrast-[3]"
         />
         <Social />
       </div>

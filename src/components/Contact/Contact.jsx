@@ -52,7 +52,7 @@ export default function Contact() {
             <img
               src={hired}
               alt="hired employee"
-              className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert dark:contrast-[3]"
+              className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert contrast-[3]"
             />
             <h2 className="w-full uppercase text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
               {t("contact")}

@@ -1,96 +1,168 @@
 [
   {
     "id": 1,
-    "name": "Generador de sitios web",
-    "description": "Aplicación que utiliza servicios de la nube para generar páginas web genéricas, donde los clientes pueden mostrar sus productos y los administradores pueden gestionar los clientes que hay en el sistema.",
     "img": "https://grajalesu.github.io/portfolio/konectapp_1.jpg",
-    "github": "https://github.com/pikonecta/pikonecta"
+    "github": "https://github.com/pikonecta/pikonecta",
+    "es": {
+      "name": "Generador de sitios web",
+      "description": "Aplicación que utiliza servicios de la nube para generar páginas web genéricas, donde los clientes pueden mostrar sus productos y los administradores pueden gestionar los clientes que hay en el sistema."
+    },
+    "en": {
+      "name": "Websites generator",
+      "description": "Application that uses cloud services to generate generic web pages, where clients can display their products and administrators can manage the clients in the system."
+    }
   },
   {
     "id": 2,
-    "name": "E-commerce",
-    "description": "E-commerce donde conjuntamente, desarrollé el backend y el frontend, además tiene desarrollo y despliegue continuo.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/ow_gpvauv.png",
-    "github": "https://github.com/GrajalesU/oldwave"
+    "github": "https://github.com/GrajalesU/oldwave",
+    "es": {
+      "name": "E-commerce",
+      "description": "E-commerce donde conjuntamente, desarrollé el backend y el frontend, además tiene desarrollo y despliegue continuo."
+    },
+    "en": {
+      "name": "E-commerce",
+      "description": "E-commerce where I jointly developed the backend and frontend, in addition to having CI/CD."
+    }
   },
   {
     "id": 3,
-    "name": "Petgram",
-    "description": "Clon de Instagram, conectado con graphQL, puedes crear tu cuenta e interactuar con los posts de otros amantes a las mascotas.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314303/proyectos/petgram_apgoah.png",
     "github": "https://github.com/GrajalesU/curso-react-avanzado",
-    "site": "https://petgram-tau-rosy.vercel.app"
+    "site": "https://petgram-tau-rosy.vercel.app",
+    "es": {
+      "name": "Petgram",
+      "description": "Clon de Instagram, conectado con graphQL, puedes crear tu cuenta e interactuar con los posts de otros amantes a las mascotas."
+    },
+    "en": {
+      "name": "Petgram",
+      "description": "Instagram clone connected with GraphQL, where you can create your account and interact with the posts of other pet lovers."
+    }
   },
   {
     "id": 4,
-    "name": "Plantpedia",
-    "description": "Enciclopedia de plantas, con arquitectura Jamstack, gestión de CMS, internacionalización y conectado con graphQL.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314304/proyectos/plantpedia_vreufv.png",
     "github": "https://github.com/grajalesu/platzi-plantpedia",
-    "site": "https://platzi-plantpedia-grajalesu.vercel.app"
+    "site": "https://platzi-plantpedia-grajalesu.vercel.app",
+    "es": {
+      "name": "Plantpedia",
+      "description": "Enciclopedia de plantas, con arquitectura Jamstack, gestión de CMS, internacionalización y conectado con graphQL."
+    },
+    "en": {
+      "name": "Plantpedia",
+      "description": "Plant encyclopedia with Jamstack architecture, CMS management, internationalization, and connected with GraphQL."
+    }
   },
   {
     "id": 5,
-    "name": "Este portafolio",
-    "description": "Este portafolio también hace parte de mis proyectos personales, espero que te esté gustando.",
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/portfolio_y25iof.png",
     "github": "https://github.com/GrajalesU/portafolio-v2",
-    "site": "https://grajalesu.vercel.app"
+    "site": "https://grajalesu.vercel.app",
+    "es": {
+      "name": "Este portafolio",
+      "description": "Este portafolio también hace parte de mis proyectos personales, espero que te esté gustando."
+    },
+    "en": {
+      "name": "This portfolio",
+      "description": "This portfolio is also part of my personal projects, I hope you are enjoying it."
+    }
   },
   {
-    "id": 5,
-    "name": "AguacateMor",
-    "description": "E-commerce de Aguacates",
+    "id": 6,
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675315833/proyectos/aguacateMor_csl5z9.png",
     "github": "https://github.com/GrajalesU/nextjs-basico",
-    "site": "https://aguacate-mor.vercel.app"
-  },
-  {
-    "id": 6,
-    "name": "Pokédex_",
-    "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/pokedex_qnxjsz.png",
-    "github": "https://github.com/GrajalesU/pokedex",
-    "site": "https://pokedex-lac-kappa.vercel.app"
-  },
-  {
-    "id": 6,
-    "name": "Contador Año Nuevo",
-    "description": "Sitio animado donde se hace un contador que avisa cuándo es año nuevo",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675315833/proyectos/new_year_t34ouv.png",
-    "github": "https://github.com/GrajalesU/FrontendMentor-Countdown",
-    "site": "https://frontend-mentor-countdown.vercel.app"
+    "site": "https://aguacate-mor.vercel.app",
+    "es": {
+      "name": "AguacateMor",
+      "description": "E-commerce de Aguacates."
+    },
+    "en": {
+      "name": "AguacateMor",
+      "description": "Avocado E-commerce."
+    }
   },
   {
     "id": 7,
-    "name": "Notificaciones",
-    "description": "Reto de Frontend mentor donde se simula una vista de notificaciones.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/notifications_dryfhf.png",
-    "github": "https://github.com/GrajalesU/Notifications-page",
-    "site": "https://notifications-page-sage.vercel.app"
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/pokedex_qnxjsz.png",
+    "github": "https://github.com/GrajalesU/pokedex",
+    "site": "https://pokedex-lac-kappa.vercel.app",
+    "es": {
+      "name": "Pokédex_",
+      "description": "En este sitio consumo la API de pokémon y muestro las características de algunos pokémon al azar."
+    },
+    "en": {
+      "name": "Pokedex_",
+      "description": "In this site, I consume the Pokemon API and display the characteristics of some randomly selected Pokemon."
+    }
   },
   {
     "id": 8,
-    "name": "Generador de contraseñas",
-    "description": "Reto de Hacktoberfest donde publicábamos nuestra versión del problema propuesto",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/password_qjs3he.png",
-    "github": "https://github.com/GrajalesU/password-generator",
-    "site": "https://hacktoberfest-2022.vercel.app/entry/grajalesu"
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675315833/proyectos/new_year_t34ouv.png",
+    "github": "https://github.com/GrajalesU/FrontendMentor-Countdown",
+    "site": "https://frontend-mentor-countdown.vercel.app",
+    "es": {
+      "name": "Contador Año Nuevo",
+      "description": "Sitio animado donde se hace un contador que avisa cuándo es año nuevo."
+    },
+    "en": {
+      "name": "New Year Countdown",
+      "description": "Animated site that features a countdown timer to let you know when it's New Year's."
+    }
   },
   {
     "id": 9,
-    "name": "Generador de consejos",
-    "description": "Reto de Frontend mentor donde se consume una API y se muestra un consejo al azar.",
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/advice_vcy9zw.png",
-    "github": "https://github.com/GrajalesU/AdviseGenerator",
-    "site": "https://advise-generator-nu.vercel.app"
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/notifications_dryfhf.png",
+    "github": "https://github.com/GrajalesU/Notifications-page",
+    "site": "https://notifications-page-sage.vercel.app",
+    "es": {
+      "name": "Notificaciones",
+      "description": "Reto de Frontend mentor donde se simula una vista de notificaciones."
+    },
+    "en": {
+      "name": "Notifications",
+      "description": "Frontend mentor challenge that simulates a notifications view."
+    }
   },
   {
-    "id": 5,
-    "name": "Tarjeta de banco",
-    "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado.",
+    "id": 10,
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/password_qjs3he.png",
+    "github": "https://github.com/GrajalesU/password-generator",
+    "site": "https://hacktoberfest-2022.vercel.app/entry/grajalesu",
+    "es": {
+      "name": "Generador de contraseñas",
+      "description": "Reto de Hacktoberfest donde publicábamos nuestra versión del problema propuesto."
+    },
+    "en": {
+      "name": "Password generator",
+      "description": "Hacktoberfest challenge where we published our version of the proposed problem."
+    }
+  },
+  {
+    "id": 11,
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338494/proyectos/advice_vcy9zw.png",
+    "github": "https://github.com/GrajalesU/AdviseGenerator",
+    "site": "https://advise-generator-nu.vercel.app",
+    "es": {
+      "name": "Generador de consejos",
+      "description": "Reto de Frontend mentor donde se consume una API y se muestra un consejo al azar."
+    },
+    "en": {
+      "name": "Advice generator",
+      "description": "Frontend mentor challenge where an API is consumed and a random advice is displayed."
+    }
+  },
+  {
+    "id": 12,
     "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1671338495/proyectos/card_xn8hf0.png",
     "github": "https://github.com/GrajalesU/FrontendMentorCreditCard",
-    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app"
+    "site": "https://lpbbnxztsfvrpbpjlcxr.vercel.app",
+    "es": {
+      "name": "Tarjeta de banco",
+      "description": "Reto de Frontend mentor donde se ingresan valores de una tarjeta de crédito y se ven los cambios de forma reactiva.Los buscadores detectan esta página como phishing pero esta información no se envía a ningún lado."
+    },
+    "en": {
+      "name": "Bank card",
+      "description": "Frontend mentor challenge where credit card values are entered and changes are seen reactively. Browsers detect this page as phishing, but no information is sent anywhere."
+    }
   }
 ]

@@ -15,10 +15,22 @@ export default function Card({ name, description, img, github, site }) {
           className="object-contain mx-auto"
         />
       </div>
-      <h3 className="mb-6 text-center font-bold text-2xl">{name}</h3>
-      <p className="w-4/5 mx-auto font-normal text-sm mb-6 dark:text-slate-300">
+      <motion.h3
+        key={language + "cardName"}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        className="mb-6 text-center font-bold text-2xl"
+      >
+        {name}
+      </motion.h3>
+      <motion.p
+        key={language + "cardDescription"}
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        className="w-4/5 mx-auto font-normal text-sm mb-6 dark:text-slate-300"
+      >
         {description}
-      </p>
+      </motion.p>
       <div className="flex flex-row justify-around absolute bottom-2 w-full">
         {github && (
           <button className="p-2 bg-black w-24 text-white rounded hover:bg-black/80">

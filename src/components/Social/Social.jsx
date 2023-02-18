@@ -5,9 +5,10 @@ import github from "../../assets/icons/GitHub.png";
 import linkedIn from "../../assets/icons/LinkedIn 3.png";
 import resume from "../../assets/icons/Resume.png";
 import { useTranslation } from "react-i18next";
-
+import i18next from "i18next";
 export default function Social() {
   const { t } = useTranslation();
+  const { language } = i18next;
   return (
     <div
       className="flex w-full justify-around absolute bottom-5 z-20
@@ -23,7 +24,14 @@ export default function Social() {
         target="_blank"
         className="flex flex-col-reverse md:flex-col items-center md:items-start"
       >
-        <span className="text-xs font-bold md:ml-3">{t("cv")}</span>
+        <motion.span
+          key={language + "cv"}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          className="text-xs font-bold md:ml-3"
+        >
+          {t("cv")}
+        </motion.span>
         <motion.img
           src={resume}
           alt="resume"

@@ -9,6 +9,7 @@ import projects from "../../utils/projects.json";
 import Card from "../Card/Card";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -24,16 +25,24 @@ export default function Projects() {
       </picture>
 
       <div className=" md:pl-8">
-        <h2 className="pt-5 uppercase mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative ">
+        <motion.h2
+          key={language + "projects"}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          className="pt-5 uppercase mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative "
+        >
           {t("projects")}
-        </h2>
-        <p
+        </motion.h2>
+        <motion.p
+          key={language + "projectsDescription"}
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
           className="w-4/5 mx-auto mb-8 text-lg  tracking-wide
           md:w-full md:pl-4 md:mb-16 md:text-xl md:max-w-lg md:ml-0
           dark:z-10 dark:relative"
         >
           {t("projectsDescription")}
-        </p>
+        </motion.p>
         <div className="mb-8 w-4/5 mx-auto pr-4">
           <Swiper
             navigation={true}

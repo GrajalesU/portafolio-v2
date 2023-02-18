@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-
+import { motion } from "framer-motion";
 export default function Theme() {
   const [theme, setTheme] = useState(localStorage.theme || "light");
 
@@ -17,10 +17,6 @@ export default function Theme() {
     }
   }, [theme]);
 
-  const isDarkMode = (theme) => {
-    return theme === "dark";
-  };
-
   const handleThemeSwitch = () => {
     setTheme((current) => {
       if (current === "dark") {
@@ -33,10 +29,16 @@ export default function Theme() {
     });
   };
   return (
-    <DarkModeSwitch
-      checked={theme === "dark"}
-      onChange={handleThemeSwitch}
-      size={32}
-    />
+    <motion.div
+    whileHover={{
+      scale: 1.1,
+    }}
+    >
+      <DarkModeSwitch
+        checked={theme === "dark"}
+        onChange={handleThemeSwitch}
+        size={32}
+      />
+    </motion.div>
   );
 }

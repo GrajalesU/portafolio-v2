@@ -16,7 +16,7 @@ const swiperParams = {
   pagination: { clickable: true },
   effect: "cards",
   breakpoints: {
-    600: {
+    800: {
       slidesPerView: 2,
     },
     1000: {

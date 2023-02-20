@@ -11,12 +11,12 @@ export default function Technologies() {
   const { language } = i18next;
   return (
     <div className="w-full min-h-screen relative md:flex md:flex-row-reverse md:items-center dark:bg-slate-800 dark:text-white transition-colors duration-700">
-      <div className="md:mr-24 lg:mr-40">
+      <div className="container mx-auto ">
         <motion.h2
           key={language + "technologies"}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          className="w-full uppercase text-right pt-4 pr-6 text-xl mb-10 md:pr-10 md:-translate-y-48 md:text-2xl font-bold"
+          className="w-full uppercase text-right pt-4 pr-2 text-xl md:text-2xl mb-10 font-bold "
         >
           {t("technologies")}
         </motion.h2>
@@ -24,12 +24,13 @@ export default function Technologies() {
           key={language + "technologiesDescription"}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          className="w-4/5 mx-auto tracking-wide text-lg mb-14 md:text-right md:text-xl md:max-w-lg relative z-20"
+          className=" mx-auto tracking-wide text-lg mb-14 md:text-right md:text-xl"
         >
           {t("technologiesDescription")}
         </motion.p>
+        <TechList />
       </div>
-      <TechList />
+
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
         <img

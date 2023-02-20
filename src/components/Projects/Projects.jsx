@@ -19,29 +19,28 @@ export default function Projects() {
           className="absolute top-0 w-full -z-10 dark:z-0 dark:invert-[20%]"
         />
       </picture>
-
-      <div className=" md:pl-8">
-        <motion.h2
-          key={language + "projects"}
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          className="pt-5 uppercase mb-8 ml-4 text-xl md:text-2xl font-bold dark:z-10 dark:relative "
-        >
-          {t("projects")}
-        </motion.h2>
-        <motion.p
-          key={language + "projectsDescription"}
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          className="w-4/5 mx-auto mb-8 text-lg  tracking-wide
-          md:w-full md:pl-4 md:mb-16 md:text-xl md:max-w-lg md:ml-0
+      <div className="container mx-auto lg:px-8 ">
+          <motion.h2
+            key={language + "projects"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className="pt-5 uppercase mb-8 text-xl md:text-2xl font-bold dark:z-10 dark:relative "
+          >
+            {t("projects")}
+          </motion.h2>
+          <motion.p
+            key={language + "projectsDescription"}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className="mx-auto mb-8 text-lg  tracking-wide
+          md:w-full md:mb-16 md:text-xl md:max-w-lg md:ml-0
           dark:z-10 dark:relative"
-        >
-          {t("projectsDescription")}
-        </motion.p>
-        <div className="mb-8 w-4/5 mx-auto">
-          <ProjectList />
-        </div>
+          >
+            {t("projectsDescription")}
+          </motion.p>
+          <div className="mx-auto">
+            <ProjectList />
+          </div>
       </div>
     </div>
   );

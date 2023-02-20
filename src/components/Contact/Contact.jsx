@@ -88,7 +88,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="nombre"
-                  className="bg-sky-400/[.25] p-1 dark:bg-sky-700/[.25]"
+                  className="bg-sky-400/[.45] p-1 dark:bg-sky-700/[.45]"
                   {...register("name", { required: true })}
                 />
                 {errors.name && (
@@ -115,7 +115,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="correo"
-                  className="bg-sky-400/[.25] p-1 dark:bg-sky-700/[.25]"
+                  className="bg-sky-400/[.45] p-1 dark:bg-sky-700/[.45]"
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
@@ -141,7 +141,7 @@ export default function Contact() {
                 </motion.label>
                 <textarea
                   id="mensaje"
-                  className="bg-sky-400/[.25] min-h-[200px] dark:bg-sky-700/[.25] "
+                  className="bg-sky-400/[.45] min-h-[200px] dark:bg-sky-700/[.45] "
                   {...register("message", { required: true })}
                 />
                 {errors.message && (

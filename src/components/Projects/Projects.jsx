@@ -1,19 +1,15 @@
 import React from "react";
-import { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
 import waveD from "../../assets/background/wave-projects-desktop.png";
 import wave from "../../assets/background/wave-projects.png";
-import projects from "../../utils/projects.json";
-import Card from "../Card/Card";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { motion } from "framer-motion";
+import ProjectList from "../ProjectList/ProjectList";
 
 export default function Projects() {
   const { t } = useTranslation();
   const { language } = i18next;
+
   return (
     <div className="w-full min-h-screen relative pb-20 dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
@@ -43,38 +39,8 @@ export default function Projects() {
         >
           {t("projectsDescription")}
         </motion.p>
-        <div className="mb-8 w-4/5 mx-auto pr-4">
-          <Swiper
-            navigation={true}
-            modules={[Navigation]}
-            loop={false}
-            centeredSlides={true}
-            centeredSlidesBounds={true}
-            breakpoints={{
-              768: {
-                slidesPerView: 2,
-                centeredSlides: true,
-                centeredSlidesBounds: true,
-                effect: "cards",
-              },
-              1000: {
-                slidesPerView: 3,
-                centeredSlides: true,
-                centeredSlidesBounds: true,
-                effect: "cards",
-              },
-            }}
-          >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <Card
-                  {...project}
-                  name={project[language].name}
-                  description={project[language].description}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="mb-8 w-4/5 mx-auto">
+          <ProjectList />
         </div>
       </div>
     </div>

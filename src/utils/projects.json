@@ -1,5 +1,19 @@
 [
   {
+    "id": 4,
+    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314304/proyectos/plantpedia_vreufv.png",
+    "github": "https://github.com/grajalesu/platzi-plantpedia",
+    "site": "https://platzi-plantpedia-grajalesu.vercel.app",
+    "es": {
+      "name": "Plantpedia",
+      "description": "Enciclopedia de plantas, con arquitectura Jamstack, gestión de CMS, internacionalización y conectado con graphQL."
+    },
+    "en": {
+      "name": "Plantpedia",
+      "description": "Plant encyclopedia with Jamstack architecture, CMS management, internationalization, and connected with GraphQL."
+    }
+  },
+  {
     "id": 1,
     "img": "https://grajalesu.github.io/portfolio/konectapp_1.jpg",
     "github": "https://github.com/pikonecta/pikonecta",
@@ -37,20 +51,6 @@
     "en": {
       "name": "Petgram",
       "description": "Instagram clone connected with GraphQL, where you can create your account and interact with the posts of other pet lovers."
-    }
-  },
-  {
-    "id": 4,
-    "img": "https://res.cloudinary.com/dkgwymlp8/image/upload/v1675314304/proyectos/plantpedia_vreufv.png",
-    "github": "https://github.com/grajalesu/platzi-plantpedia",
-    "site": "https://platzi-plantpedia-grajalesu.vercel.app",
-    "es": {
-      "name": "Plantpedia",
-      "description": "Enciclopedia de plantas, con arquitectura Jamstack, gestión de CMS, internacionalización y conectado con graphQL."
-    },
-    "en": {
-      "name": "Plantpedia",
-      "description": "Plant encyclopedia with Jamstack architecture, CMS management, internationalization, and connected with GraphQL."
     }
   },
   {

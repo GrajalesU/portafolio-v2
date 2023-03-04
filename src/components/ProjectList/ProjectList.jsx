@@ -15,13 +15,14 @@ const swiperParams = {
   centeredSlides: true,
   pagination: { clickable: true },
   effect: "cards",
+  grabCursor: true,
   breakpoints: {
-    800: {
+    900: {
       slidesPerView: 2,
     },
-    1000: {
+    1100: {
       slidesPerView: 3,
-      centeredSlidesBounds: true,
+      grabCursor: false,
     },
   },
 };

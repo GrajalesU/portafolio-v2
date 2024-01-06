@@ -16,7 +16,7 @@ export default function Technologies() {
           key={language + "technologies"}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          className="w-full uppercase text-right pt-4 pr-2 text-xl md:text-2xl mb-10 font-bold "
+          className="w-full uppercase text-right pt-4 pr-2 text-xl md:text-3xl mb-10 font-bold "
         >
           {t("technologies")}
         </motion.h2>

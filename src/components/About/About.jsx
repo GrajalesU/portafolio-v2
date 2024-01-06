@@ -20,11 +20,11 @@ export default function About() {
             key={language + "about"}
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
-            className=" pt-5 mb-8 text-xl md:text-2xl md:mb-32 font-bold uppercase"
+            className=" pt-5 mb-8 text-xl md:text-3xl md:mb-32 font-bold uppercase"
           >
             {t("about")}
           </motion.h2>
-          <div className="tracking-wide mx-auto mb-8 text-lg md:text-xl relative z-20">
+          <div className="tracking-wide mx-auto mb-8 text-lg md:text-xl relative z-20 text-pretty">
             <motion.span
               key={language + "hi"}
               animate={{ opacity: 1 }}

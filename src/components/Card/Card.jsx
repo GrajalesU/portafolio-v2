@@ -7,7 +7,7 @@ export default function Card({ name, description, img, github, site }) {
   const { language } = i18next;
 
   return (
-    <article className="w-80 h-[420px] shadow-xl bg-white dark:bg-slate-700 mx-auto mb-3 relative">
+    <article className="w-80 md:w-[360px] h-[420px] shadow-xl bg-white dark:bg-slate-700 mx-auto mb-3 relative">
       <div className="w-full h-56 flex mb-3">
         <img
           src={img}
@@ -27,7 +27,7 @@ export default function Card({ name, description, img, github, site }) {
         key={language + "cardDescription"}
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        className="w-[90%] mx-auto font-normal text-sm mb-6 dark:text-slate-300"
+        className="w-[95%] mx-auto font-normal text-sm mb-6 dark:text-slate-300"
       >
         {description}
       </motion.p>

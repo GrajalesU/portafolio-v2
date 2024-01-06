@@ -24,7 +24,7 @@ export default function Projects() {
           key={language + "projects"}
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          className="pt-5 uppercase mb-8 text-xl md:text-2xl font-bold dark:z-10 dark:relative "
+          className="pt-5 uppercase mb-8 text-xl md:text-3xl font-bold dark:z-10 dark:relative "
         >
           {t("projects")}
         </motion.h2>
@@ -34,7 +34,7 @@ export default function Projects() {
           initial={{ opacity: 0 }}
           className="mx-auto mb-8 text-lg  tracking-wide
           md:w-full md:mb-16 md:text-xl md:max-w-lg md:ml-0
-          dark:z-10 dark:relative"
+          dark:z-10 dark:relative text-pretty"
         >
           {t("projectsDescription")}
         </motion.p>

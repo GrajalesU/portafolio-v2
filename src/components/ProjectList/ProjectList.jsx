@@ -21,6 +21,7 @@ const swiperParams = {
       slidesPerView: 2,
     },
     1100: {
+      initialSlide: 1,
       slidesPerView: 3,
       grabCursor: false,
     },

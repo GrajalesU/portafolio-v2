@@ -10,7 +10,7 @@ export default function Technologies() {
   const { t } = useTranslation();
   const { language } = i18next;
   return (
-    <div className="w-full min-h-screen relative md:flex md:flex-row-reverse md:items-center dark:bg-slate-800 dark:text-white transition-colors duration-700">
+    <div className="w-full h-svh relative md:flex md:flex-row-reverse md:items-center dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <div className="container mx-auto ">
         <motion.h2
           key={language + "technologies"}

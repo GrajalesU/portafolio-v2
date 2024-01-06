@@ -38,7 +38,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="w-full min-h-screen relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
+    <div className="w-full h-svh relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
       <picture>
         <source srcSet={waveD} media="(min-width:768px)" />
         <img
@@ -55,19 +55,19 @@ export default function Contact() {
                 alt="hired employee"
                 className="absolute top-[calc(60%-228px)] -z-10 left-[calc(50%-190px)] dark:invert contrast-[3]"
               />
-              <h2 className="w-full uppercase text-center text-xl font-bold pt-16 mb-11 md:text-2xl">
+              <h2 className="w-full uppercase text-center text-xl font-bold pt-8 mb-11 md:text-2xl">
                 {t("contact")}
               </h2>
               <motion.p
                 key={language + "emailMsg"}
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
-                className="w-11/12 md:w-10/12 mb-16 mx-auto text-lg tracking-wide md:text-xl"
+                className="w-11/12 md:w-10/12 mb-16 md:mb-8 mx-auto text-lg tracking-wide md:text-xl"
               >
                 {t("emailMsg")}{" "}
                 <a
                   href="mailto: juan.grajalesu@gmail.com"
-                  className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-400"
+                  className="text-cyan-600 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-400 font-bold"
                 >
                   {t("email")}
                 </a>{" "}
@@ -75,13 +75,13 @@ export default function Contact() {
               </motion.p>
               <form
                 ref={form}
-                className="w-4/5 mx-auto text-xl md:text-2xl"
+                className="w-4/5 mx-auto text-xl"
                 onSubmit={handleSubmit(handleEmail)}
               >
                 <div className="flex flex-col gap-1 mb-2">
                   <label
                     htmlFor="nombre"
-                    className="font-bold"
+                    className="font-semibold"
                     placeholder="Introduce tu nombre"
                   >
                     {t("formName")}
@@ -161,7 +161,7 @@ export default function Contact() {
                   animate={{ opacity: 1 }}
                   initial={{ opacity: 0 }}
                   type="submit"
-                  className="bg-sky-300 dark:bg-sky-800 w-full mx-auto p-2 rounded text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
+                  className="bg-sky-300 dark:bg-sky-800 w-full mx-auto px-1 py-0.5 rounded text-white font-bold tracking-wider mb-5 hover:bg-sky-400"
                 >
                   {t("formSubmit")}
                 </motion.button>

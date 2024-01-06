@@ -12,7 +12,7 @@ export default function About() {
   const { t } = useTranslation();
   const { language } = i18next;
   return (
-    <div className="w-full min-h-[95vh] lg:min-h-screen relative dark:bg-slate-800 dark:text-white transition-colors duration-700">
+    <div className="w-full h-svh relative dark:bg-slate-800 dark:text-white transition-colors duration-700 overflow-hidden">
       <div className="container mx-auto lg:px-8 px-2">
         <Configuration />
         <div className="md:max-w-lg md:pt-[15%]">
